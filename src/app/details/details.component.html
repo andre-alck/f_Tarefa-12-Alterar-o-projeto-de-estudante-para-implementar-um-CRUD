@@ -1,0 +1,119 @@
+<div class="main">
+  <div class="container container-principal shadow mt-5">
+
+    <!-- Student -->
+    <div *ngIf="student">
+      <div class="d-flex gap-3 align-items-center">
+        <img src="../../assets/{{ profile }}.png" alt="Imagem perfil" class="profile" />
+        <h4 class="modal-title">{{ tipo }} Details</h4>
+      </div>
+      <div class="d-flex justify-content-center mt-3">
+        <img class="img-thumbnail img-fluid rounded" [src]="student.foto" alt="Foto perfil estudante">
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 mt-4">
+          <label for="nome" class="form-label">Nome</label>
+          <input #nome name="nome" type="text" [(ngModel)]="student.nome" class="form-control" [disabled]="disabledInput" />
+        </div>
+        <div class="col-sm-4 mt-4">
+          <label for="idade" class="form-label">Idade</label>
+          <input #idade name="idade" type="number" [(ngModel)]="student.idade" class="form-control" [disabled]="disabledInput" />
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-sm-8 mt-3">
+          <label for="curso" class="form-label">Curso</label>
+          <input #curso name="curso" type="text" [(ngModel)]="student.curso" class="form-control" [disabled]="disabledInput" />
+        </div>
+        <div class="col-sm-4 mt-3">
+          <label for="registro" class="form-label">RA</label>
+          <input #registro name="registro" type="number" [(ngModel)]="student.registro" class="form-control" [disabled]="disabledInput" />
+        </div>
+      </div>
+
+      <!-- Buttons -->
+      <div class="d-flex gap-2 mt-5">
+        <button type="button" class="btn btn-success" (click)="save(student.tipo)" [disabled]="disabledInput">Salvar</button>
+        <button type="button" class="btn btn-warning" (click)="edit()">Editar</button>
+        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#studentModal">Deletar</button>
+        <button type="button" class="btn btn-secondary" routerLink="{{ voltar }}">Voltar</button>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="studentModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="d-flex justify-content-between p-3">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Você tem certeza que deseja deletar <strong>{{student.nome}}</strong>?
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal" (click)="remove('student')">Sim</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Teacher -->
+    <div *ngIf="teacher">
+      <div class="d-flex gap-3">
+        <img src="../../assets/{{ profile }}.png" alt="Imagem perfil" class="profile" />
+        <h4 class="modal-title">{{ tipo }} Details</h4>
+      </div>
+      <div class="d-flex justify-content-center mt-3">
+        <img class="img-thumbnail img-fluid rounded shadow" [src]="teacher.foto" alt="Foto perfil estudante">
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 mt-4">
+          <label for="nome" class="form-label">Nome</label>
+          <input #nome type="text" [(ngModel)]="teacher.nome" class="form-control" [disabled]="disabledInput" />
+        </div>
+        <div class="col-sm-4 mt-4">
+          <label for="idade" class="form-label">Idade</label>
+          <input #idade type="number" [(ngModel)]="teacher.idade" class="form-control" [disabled]="disabledInput" />
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-sm-8 mt-3">
+          <label for="curso" class="form-label">Curso</label>
+          <input #curso type="text" [(ngModel)]="teacher.curso" class="form-control" [disabled]="disabledInput" />
+        </div>
+        <div class="col-sm-4 mt-3">
+          <label for="registro" class="form-label">RA</label>
+          <input #registro type="number" [(ngModel)]="teacher.registro" class="form-control" [disabled]="disabledInput" />
+        </div>
+      </div>
+
+      <!-- Buttons -->
+      <div class="d-flex gap-2 mt-5">
+        <button type="button" class="btn btn-success" (click)="save(teacher.tipo)" [disabled]="disabledInput">Salvar</button>
+        <button type="button" class="btn btn-warning" (click)="edit()">Editar</button>
+        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#teacherModal">Deletar</button>
+        <button type="button" class="btn btn-secondary" routerLink="{{ voltar }}">Voltar</button>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="teacherModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="d-flex justify-content-between p-3">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Você tem certeza que deseja deletar <strong>{{teacher.nome}}</strong>?
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal" (click)="remove('teacher')">Sim</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

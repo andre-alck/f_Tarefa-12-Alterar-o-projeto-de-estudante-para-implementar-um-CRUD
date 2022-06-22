@@ -1,0 +1,58 @@
+<div class="modal fade" id="studentDetail" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div *ngIf="student">
+
+        <!-- Header -->
+        <div class="modal-header gap-3">
+          <img src="../../assets/profile.png" alt="Imagem perfil" class="profile" />
+          <h3 class="modal-title">Detalhes dos estudantes</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <!-- Body -->
+        <div class="modal-body p-3">
+          <div class="d-flex justify-content-center">
+            <img class="img-thumbnail img-fluid rounded shadow" [src]="student.foto" alt="Foto perfil estudante">
+          </div>
+          
+          <div class="row">
+            <div class="col-sm-8 mt-4">
+              <label for="nome" class="form-label">Nome</label>
+              <input #nome type="text" [(ngModel)]="student.nome" class="form-control" [disabled]="disabledInput"/>
+            </div>
+            <div class="col-sm-4 mt-4">
+              <label for="idade" class="form-label">Idade</label>
+              <input #idade type="number" [(ngModel)]="student.idade" class="form-control" [disabled]="disabledInput"/>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-sm-8 mt-3">
+              <label for="curso" class="form-label">Curso</label>
+              <input #curso type="text" [(ngModel)]="student.curso" class="form-control" [disabled]="disabledInput"/>
+            </div>
+            <div class="col-sm-4 mt-3">
+              <label for="registro" class="form-label">RA</label>
+              <input #registro type="number" [(ngModel)]="student.registro" class="form-control" [disabled]="disabledInput"/>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="modal-footer justify-content-start">
+        <button 
+          type="button" 
+          class="btn btn-success" 
+          data-bs-dismiss="modal" 
+          [disabled]="disabledInput"
+          (click)="save()"
+        >
+          Salvar
+        </button>
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Voltar</button>
+      </div>
+    </div>
+  </div>
+</div>

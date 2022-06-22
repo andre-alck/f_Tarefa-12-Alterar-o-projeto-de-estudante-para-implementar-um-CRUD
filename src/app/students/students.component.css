@@ -1,0 +1,54 @@
+.container, 
+.alert {
+  max-width: 40rem !important;
+}
+
+.row {
+  margin: 0;
+}
+
+.list-group-item {
+  padding: 12px 0;
+  cursor: pointer;
+  transition: .2s all ease;
+}
+
+.list-group-item:hover {
+  font-weight: bold;
+}
+
+.icons {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s all ease;
+}
+
+img {
+  width: 24px;
+  height: 24px;
+}
+
+.student {
+  width: 48px;
+  height: 48px;
+}
+
+.header {
+  gap: 2vw;
+}
+
+.alert {
+  margin: 0 auto;
+}
+
+@media(min-width: 576px) {
+  .list-group-item:hover .icons {
+    visibility: visible;
+    opacity: .9;
+  }
+
+  .edit-icon:hover, 
+  .delete-icon:hover {
+    opacity: 0.5;
+  }
+}

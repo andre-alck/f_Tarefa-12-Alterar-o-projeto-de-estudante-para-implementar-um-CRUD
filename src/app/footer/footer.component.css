@@ -1,0 +1,4 @@
+.container-fluid {
+  justify-content: start;
+  gap: .5rem;
+}

@@ -1,0 +1,22 @@
+<div class="container shadow mt-5 p-3">
+  <div class="d-flex justify-content-center align-items-center header">
+    <h2 class="text-center">Professores criados</h2>
+  </div>
+
+  <div *ngIf="teachers.length > 0">
+    <ul class="list-group list-group-flush mt-4">
+      <li class="list-group-item row d-flex" *ngFor="let teacher of teachers">
+        <div class="col-8" [routerLink]="['/details', teacher.tipo, teacher.id, false]">
+          <span class="badge bg-success">{{ teacher.id }}</span> &nbsp;{{ teacher.nome }}
+        </div>
+        <div class="col-4 d-flex justify-content-end gap-3 icons">
+          <img src="../../assets/edit.png" alt="Editar" class="edit-icon" [routerLink]="['/details', teacher.tipo, teacher.id, true]" />
+          <img src="../../assets/delete.png" alt="Remover" class="delete-icon" (click)="removeTeacher(teacher)" />
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- Alert -->
+<ngb-alert #selfClosingAlert *ngIf="alerta.message" [type]="alerta.type" (closed)="alerta.message = ''" class="mt-4 alert">{{ alerta.message }}</ngb-alert>

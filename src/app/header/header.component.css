@@ -1,0 +1,13 @@
+.nav-link {
+  transition: .2s all ease;
+}
+
+.nav-link:hover {
+  font-weight: 500;
+}
+
+.active {
+  font-size: 1.125rem !important;
+  font-weight: 500;
+  color: #343434;
+}

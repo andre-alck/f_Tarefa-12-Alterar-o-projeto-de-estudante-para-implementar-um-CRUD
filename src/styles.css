@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+  color: #525151;
+  scroll-behavior: smooth;
+}
+
+html, body {
+  height: 100%;
+}

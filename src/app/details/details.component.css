@@ -1,0 +1,37 @@
+.main {
+  height: 110vh;
+}
+
+.container {
+  max-width: 40rem !important;
+}
+
+img {
+  max-height: 500px;
+  object-fit: cover;
+}
+
+input:disabled, button:disabled {
+  cursor: not-allowed;
+}
+
+.profile {
+  width: 48px;
+  height: 48px;
+}
+
+.form-label {
+  font-size: 1rem;
+}
+
+@media (min-width: 767px) {
+  .container-principal {
+    padding: 16px 24px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container-principal {
+    padding: 16px 32px;
+  }
+}

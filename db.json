@@ -1,0 +1,206 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "nome": "Gabriela Paz",
+      "idade": 16,
+      "registro": 38505517347,
+      "curso": "Moda",
+      "foto": "../../../assets/student-1.jpg",
+      "sexo": "Female",
+      "tipo": "Student"
+    },
+    {
+      "id": 2,
+      "nome": "Júlia Rodrigues",
+      "idade": 23,
+      "registro": 23087894654,
+      "curso": "Engenharia Civil",
+      "foto": "../../../assets/student-2.jpg",
+      "sexo": "Female",
+      "tipo": "Student"
+    },
+    {
+      "id": 3,
+      "nome": "João Rico",
+      "idade": 42,
+      "registro": 83469361473,
+      "curso": "Engenharia Mecatrônica",
+      "foto": "../../../assets/student-3.jpg",
+      "sexo": "Male",
+      "tipo": "Student"
+    },
+    {
+      "id": 4,
+      "nome": "Jonas Pinheiro",
+      "idade": 41,
+      "registro": 12174164990,
+      "curso": "Jornalismo",
+      "foto": "../../../assets/student-4.jpg",
+      "sexo": "Male",
+      "tipo": "Student"
+    },
+    {
+      "id": 5,
+      "nome": "Sandro Roberto",
+      "idade": 27,
+      "registro": 64769487393,
+      "curso": "Arquitetura e Urbanismo",
+      "foto": "../../../assets/student-5.jpg",
+      "sexo": "Female",
+      "tipo": "Student"
+    },
+    {
+      "id": 6,
+      "nome": "Vitor Lunio",
+      "idade": 18,
+      "registro": 84641556790,
+      "curso": "Engenharia Ambiental",
+      "foto": "../../../assets/student-6.jpg",
+      "sexo": "Male",
+      "tipo": "Student"
+    },
+    {
+      "id": 7,
+      "nome": "Lucas Benedicto",
+      "idade": 20,
+      "registro": 13283594009,
+      "curso": "Engenharia da Computação",
+      "foto": "../../../assets/student-7.jpg",
+      "sexo": "Female",
+      "tipo": "Student"
+    },
+    {
+      "id": 8,
+      "nome": "Lucas Lunio",
+      "idade": 25,
+      "registro": 78582072691,
+      "curso": "Teatro",
+      "foto": "../../../assets/student-8.jpg",
+      "sexo": "Male",
+      "tipo": "Student"
+    },
+    {
+      "id": 9,
+      "nome": "Armandanis Decas",
+      "idade": 35,
+      "registro": 98736042120,
+      "curso": "Licenciatura em Música",
+      "foto": "../../../assets/student-9.jpg",
+      "sexo": "Male",
+      "tipo": "Student"
+    },
+    {
+      "id": 10,
+      "nome": "Luís Vaso",
+      "idade": 38,
+      "registro": 10264137180,
+      "curso": "Licenciatura em Artes",
+      "foto": "../../../assets/student-10.jpg",
+      "sexo": "Female",
+      "tipo": "Student"
+    }
+  ],
+  "teachers": [
+    {
+      "id": 1,
+      "nome": "Rejane Garcia",
+      "idade": 35,
+      "registro": 12318983005,
+      "curso": "GTI",
+      "foto": "../../../assets/teacher-1.jpg",
+      "sexo": "Female",
+      "tipo": "teacher"
+    },
+    {
+      "id": 2,
+      "nome": "Vitor Vitorello",
+      "idade": 63,
+      "registro": 8766769018,
+      "curso": "ADS",
+      "foto": "../../../assets/teacher-2.jpg",
+      "sexo": "Male",
+      "tipo": "teacher"
+    },
+    {
+      "id": 3,
+      "nome": "Annie Guys",
+      "idade": 52,
+      "registro": 48760669063,
+      "curso": "Economia",
+      "foto": "../../../assets/teacher-3.jpg",
+      "sexo": "Male",
+      "tipo": "teacher"
+    },
+    {
+      "id": 4,
+      "nome": "Cleiton Watermelon",
+      "idade": 41,
+      "registro": 15018421029,
+      "curso": "Biologia",
+      "foto": "../../../assets/teacher-4.jpg",
+      "sexo": "Male",
+      "tipo": "teacher"
+    },
+    {
+      "id": 5,
+      "nome": "Wellington Menezes",
+      "idade": 57,
+      "registro": 16463663000,
+      "curso": "Ciencias politicas",
+      "foto": "../../../assets/teacher-5.jpg",
+      "sexo": "Male",
+      "tipo": "teacher"
+    },
+    {
+      "id": 6,
+      "nome": "Gustavo Henrique",
+      "idade": 48,
+      "registro": 7345971000,
+      "curso": "Fotografia",
+      "foto": "../../../assets/teacher-6.jpg",
+      "sexo": "Male",
+      "tipo": "teacher"
+    },
+    {
+      "id": 7,
+      "nome": "Narcísio Lopes",
+      "idade": 30,
+      "registro": 47361365027,
+      "curso": "Eventos",
+      "foto": "../../../assets/teacher-7.jpg",
+      "sexo": "Female",
+      "tipo": "teacher"
+    },
+    {
+      "id": 8,
+      "nome": "Uber Santos",
+      "idade": 45,
+      "registro": 78702189011,
+      "curso": "ADS",
+      "foto": "../../../assets/teacher-8.jpg",
+      "sexo": "Female",
+      "tipo": "teacher"
+    },
+    {
+      "id": 9,
+      "nome": "Lula da Silva",
+      "idade": 65,
+      "registro": 83215051017,
+      "curso": "Historia",
+      "foto": "../../../assets/teacher-9.jpg",
+      "sexo": "Female",
+      "tipo": "teacher"
+    },
+    {
+      "id": 10,
+      "nome": "Miguel Andrade",
+      "idade": 58,
+      "registro": 97319648053,
+      "curso": "Letras",
+      "foto": "../../../assets/teacher-10.jpg",
+      "sexo": "Male",
+      "tipo": "teacher"
+    }
+  ]
+}

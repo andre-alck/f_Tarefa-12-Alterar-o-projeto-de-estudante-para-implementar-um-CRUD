@@ -1,0 +1,14 @@
+img {
+  width: 320px;
+  height: 360px;
+  object-fit: cover;
+}
+
+.profile {
+  width: 48px;
+  height: 48px;
+}
+
+.form-label {
+  font-size: 1rem;
+}
